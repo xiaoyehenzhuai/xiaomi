@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米</title>
+    <link rel="stylesheet" href="../css/xiaomi.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1053591_z1hw2zs40xl.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1053591_wsgmw8z3to.css">
+</head>
+<style>
+    body{
+        background:#f5f5f5;
+    }
+</style>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #banner {
+        width: 1226px;
+        height: 460px;
+        border: 1px solid red;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #imageBox {
+        width: 1226px;
+        height: 460px;
+    }
+
+    #imageBox > li {
+        width: 1226px;
+        height: 460px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.8s;
+        opacity: 0.6; /*透明度*/
+    }
+
+    #imageBox > li.active {
+        z-index: 1;
+        opacity: 1;
+    }
+
+    #imageBox > li > a {
+        display: block;
+        width: 1226px;
+        height: 460px;
+    }
+
+    #imageBox > li > a > img {
+        width: 1226px;
+        height: 460px;
+        display: block;
+    }
+
+    #pagerBox {
+        width: 100px;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        z-index: 99;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #pagerBox>li{
+        width:6px;
+        height:6px;
+        background:orange;
+        border: 2px #ccc solid;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline;
+    }
+    #pagerBox>li.active{
+
+        background:#eee;
+        border: 2px #48ee09 solid;
+
+    }
+
+</style>
+        <body>
+<!--小米首页开始-->
+<!--小米首页顶部导航栏开始-->
+<header class="mi-header">
+            <div class="header-content">
+                <ul class="header-nav">
+                    <li>
+                    <a href="">小米商城</a>
+                    <span>|</span>
+                    <a href="">MUI</a>
+                    <span>|</span>
+                    <a href="">loT</a>
+                    <span>|</span>
+                    <a href="">云服务</a>
+                    <span>|</span>
+                    <a href="">金融</a>
+                    <span>|</span>
+                    <a href="">有品</a>
+                    <span>|</span>
+                    <a href="">小爱开放平台</a>
+                    <span>|</span>
+                    <a href="">政企服务</a>
+                    <span>|</span>
+                    <a href="">资质证照</a>
+                    <span>|</span>
+                    <a href="">协议规则</a>
+                    <span>|</span>
+                    <a href="">下载app</a>
+                    <span>|</span>
+                    <a href="">Select Region</a>
+                    <span>|</span>
+                    </li>
+                </ul>
+                <div class="header-car">
+                    <a href="">登录</a>
+                    <span>|</span>
+                    <a href="">注册</a>
+                    <span>|</span>
+                    <a href="">消息通知</a>
+                    <a href="" id="car"><i class="iconfont">&#xe654;</i> 购物车（0）</a>
+                </div>
+            </div>
+</header>
+<!--小米首页顶部导航结束-->
+<!--小米首页搜索部分开始-->
+<div class="search-box">
+    <div class="container search">
+        <div class="search-img">
+            <img src="../img/logo-footer.png" alt="">
+        </div>
+        <ul class="search-list">
+            <li class="search-item">小米手机 <div class="item-d1"></div></li>
+            <li class="search-item">红米</li>
+            <li class="search-item">电视</li>
+            <li class="search-item">笔记本</li>
+            <li class="search-item">家电</li>
+            <li class="search-item">新品</li>
+            <li class="search-item">路由器</li>
+            <li class="search-item">智能硬件</li>
+            <li class="search-item">服务</li>
+            <li class="search-item">社区</li>
+        </ul>
+        <div class="search-input">
+            <div class="search-input2">
+            <input type="button" value="小米8" ><!--输入框默认显示的名字-->
+                <input type="button" value="小米9 SE" >
+            <div class="search-logo">
+                <i class="iconfont"> &#xe615;</i><!--<i><img src="../img/sousuo.png" alt=""></i>-->
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--小米首页搜索部分结束-->
+<!--小米首页轮播图开始-->
+<div class="container banner-box">
+    <ul class="banner-list">
+        <li class="banner-item">
+            手机 电话卡
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+        电视 盒子
+        <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            笔记本 平板
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            家电 插线板
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            出行 穿戴
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            智能 路由器
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            电源 配件
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            健康 儿童
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            耳机 音箱
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+        <li class="banner-item">
+            生活 箱包
+            <i class="iconfont icon-ziyuanldpi"></i>
+        </li>
+    </ul>
+
+    <div id="banner">
+        <ul id="imageBox"> <!--图片盒子-->
+            <li class="active"><a href=""><img src="../img/lunbotu1.jpg" alt=""></a></li>
+            <li><a href=""><img src="../img/lunbotu2.jpg" alt=""></a></li>
+            <li><a href=""><img src="../img/lunbotu3.jpg" alt=""></a></li>
+            <li><a href=""><img src="../img/lunbotu4.jpg" alt=""></a></li>
+            <li><a href=""><img src="../img/lunbotu5.jpg" alt=""></a></li>
+        </ul>
+        <ul id="pagerBox">  <!--轮播点盒子-->
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        let pagers = document.querySelectorAll("#pagerBox>li");   /*点*/
+        let imgs = document.querySelectorAll("#imageBox>li");     /*图*/
+        let banner = document.querySelector("#banner");
+        let flag = false;
+        //console.log(banner);
+        // console.log(pagers);
+        // console.log(imgs);
+        pagers.forEach(function (ele, index) {
+            ele.onclick = function () {
+                flag = true;
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[index].classList.add("active");
+                pagers[index].classList.add("active");
+            }
+        });
+        let now = 0;
+
+        function move() {
+            {
+                now++;
+                if (now === imgs.length) {
+                    now = 0;
+                }
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[now].classList.add("active");
+                pagers[now].classList.add("active");
+            }
+        }
+
+        /*    let st = setInterval(function () {
+                now++;
+                if (now === imgs.length) {
+                    now = 0;
+                }
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].classList.remove("active");
+                    pagers[i].classList.remove("active");
+                }
+                imgs[now].classList.add("active");
+                pagers[now].classList.add("active");
+            }, 3000);*/
+        let st = setInterval(move, 3000);
+        banner.onmouseenter = function () {
+            clearInterval(st);
+        };
+        banner.onmouseleave = function () {
+            if (flag === true) {
+                return;
+            }
+            st = setInterval(move, 3000);
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*    {
+                let i=1;
+                let r=setInterval(function () {
+                    console.log(i);
+                    i++;
+                    if (i===5){
+                        clearInterval(r);
+                    }
+                },1000)  //回调函数  时间    //异步执行
+            }*/
+    </script>
+
+
+    <div class="left"></div>
+    <div class="right"></div>
+
+</div>
+<!--小米首页轮播图结束-->
+<!--小米闪购开始-->
+<div class="flash-box container" >
+    <div class="flash-title">
+        <!--小米闪购的右上角：用来左右翻页（开始）-->
+        <div class="you">
+            <img src="../img/you.png" alt="">
+        </div>
+        <div class="zuo">
+            <img src="../img/zuo.png" alt="">
+        </div>
+        <!--小米闪购的右上角：用来左右翻页（结束）-->
+        <!--小米闪购标题开始-->
+        <h3>小米闪购</h3>
+        <!--小米闪购标题结束-->
+    </div>
+
+        <div class="flash-bd">
+            <ul class="flash-shop">
+
+                <li class="flash-shop-item">
+
+                    <div class="zhezhao"></div>
+
+                    <img src="../img/xiaoai.jpg" alt="">
+
+                    <h3>米兔智能故事机 白色</h3>
+
+                    <div class="desc">能说会道，宝宝的好玩伴</div>
+
+                    <p class=""></p>
+
+                    <div class="price">
+                        179元
+                        <s>199元</s>
+                    </div>
+
+                </li>
+                <li class="flash-shop-item">
+
+                    <div class="zhezhao">
+
+                    </div>
+
+                    <img src="../img/yaodian.jpg" alt="">
+
+                    <h3>8H可调节支撑腰靠 条纹灰</h3>
+
+                    <div class="desc">贴合更护腰</div>
+
+                    <p class=""></p>
+
+                    <div class="price">
+                        79元
+                        <s>89元</s>
+                    </div>
+
+                </li>
+                <li class="flash-shop-item">
+
+                    <div class="zhezhao"></div>
+
+                    <img src="../img/shoubiao.png" alt="">
+
+                    <h3>米兔儿童电话手表3 4G 蓝色</h3>
+
+                    <div class="desc">带你探索植物园的电话手表</div>
+
+                    <p class=""></p>
+
+                    <div class="price">528元
+                        <s>599元</s>
+                    </div>
+
+                </li>
+                <li class="flash-shop-item">
+
+                    <div class="zhezhao"></div>
+
+                    <img src="../img/maojin.png" alt="">
+
+                    <h3>最生活毛巾·Air(10条装)白色</h3>
+
+                    <div class="desc">柔软舒适，轻巧便捷</div>
+
+                    <p class=""></p>
+
+                    <div class="price">
+                        69元
+                        <s>169元</s>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="flash-first">
+                <h3>14:00场</h3>
+                <img src="../img/shanxian.png" alt="">
+                <p>距离结束还有</p>
+                <div class="time-box">
+                    <div class="time">
+                        00
+                    </div>
+
+                    <div class="dian">:</div>
+                    <div class="time">
+                        00
+                    </div>
+
+                    <div class="dian">:</div>
+                    <div class="time">
+                        00
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+<!--小米闪购结束-->
+<!--手机部分开始-->
+<div class="photo-box container">
+            <div class="photo-title">
+                手机
+            </div><!--标题：手机-->
+            <div class="phone-bd-special">
+                <img src="../img/mi-mix3.jpg" alt="" class="photo-mi-mix3">
+            </div><!--最左边最大的手机-->
+            <ul class="phone-bd-list">
+
+                <!--1行1列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+                            新品
+                        </ul>
+                    </div>
+
+                    <img src="../img/11.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+
+                    <div>
+                        <ul class="photo-js">
+                            潮流镜面渐变色，2400万自拍旗舰
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="price-shouji">
+                            1399元
+                        </p>
+                    </div>
+                </li>
+                <!--1行1列手机-->
+
+                <!--1行2列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+                            小米play
+                        </ul>
+                    </div>
+
+                    <img src="../img/12.png" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            内置每月10G高速流量，高颜值流光渐变色
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1099元
+                        </p>
+                    </div>
+                </li>
+                <!--1行2列手机-->
+
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            减300元
+                        </ul>
+                    </div>
+
+                    <img src="../img/13.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 SE 6GB+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            AI 超感光双摄，三星 AMOLED 屏幕
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1699元
+                            <s>
+                                1999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行3列手机-->
+
+                <!--1行4列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            减600元
+                        </ul>
+                    </div>
+
+                    <img src="../img/14.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米MIX 2S 8GB+256GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            晓龙845年度旗舰处理器，艺术品般陶瓷机身
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">3399元
+                            <s>
+                                3999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行4列手机-->
+
+                <!--2行1列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            享8折
+                        </ul>
+                    </div>
+
+                    <img src="../img/21.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米6X 6GB+128GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            轻薄美观的手机
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1499元
+                            <s>
+                                1999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--2行1列手机-->
+
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            减100元
+                        </ul>
+                    </div>
+
+                    <img src="../img/22.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米Max 3 4GB+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1599元
+                            <s>
+                                1699元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行2列手机-->
+
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            享8折
+                        </ul>
+                    </div>
+
+                    <img src="../img/23.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            红米6 Pro
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            高颜值大电量 红米旗舰
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1029元
+                            <s>
+                                1299元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行3列手机-->
+
+                <!--1行4列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+                            减30元
+                        </ul>
+                    </div>
+
+                    <img src="../img/24.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            红米6A 2GB+16GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            569元
+                            <s>
+                                599元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行4列手机-->
+
+            </ul><!--8类手机-->
+            <div class="phone-bd">
+            </div><!--手机部分的底部大绿色块-->
+        </div>
+<!--手机结束部分-->
+<!--电视部分开始-->
+<div class="dianshi">
+    <img src="../img/dianshi.jpg" alt="" class="dianshi-img">
+</div>
+<!--电视部分结束-->
+<!--家电部分开始-->
+<div class="photo-box container">
+    <div class="photo-title">
+        <div class="tv">
+            <h2>家电
+                <span class="tv-you">
+                    <em class="tv-you-xian">热门</em>
+                    <em>电视影音</em>
+                    <em>电脑</em>
+                    <em>家具</em>
+                    <!--em,强调-->
+                </span>
+            </h2>
+        </div>
+        <div class="tv-neirong">
+            <div>
+            <ul class="phone-bd-special">
+                <li>
+                    <img src="../img/31.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../img/41.jpg" alt="">
+                </li>
+            </ul>
+            </div>
+            <ul class="phone-bd-list">
+
+                <!--1行1列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/32.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+
+                    <div>
+                        <ul class="photo-js">
+                            潮流镜面渐变色，2400万自拍旗舰
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="price-shouji">
+                            1399元
+                        </p>
+                    </div>
+                </li>
+                <!--1行1列手机-->
+
+                <!--1行2列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/33.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            内置每月10G高速流量，高颜值流光渐变色
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1099元
+                        </p>
+                    </div>
+                </li>
+                <!--1行2列手机-->
+
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/34.png" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 SE 6GB+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            AI 超感光双摄，三星 AMOLED 屏幕
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1699元
+                            <s>
+                                1999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行3列手机-->
+
+                <!--1行4列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/44.png" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 SE 6GB+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            AI 超感光双摄，三星 AMOLED 屏幕
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1699元
+                            <s>
+                                1999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行4列手机-->
+
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/42.png" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+
+                    <div>
+                        <ul class="photo-js">
+                            潮流镜面渐变色，2400万自拍旗舰
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="price-shouji">
+                            1399元
+                        </p>
+                    </div>
+                </li>
+                <!--1行1列手机-->
+
+                <!--1行2列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao">
+                        <ul class="photo-bj">
+
+                        </ul>
+                    </div>
+
+                    <img src="../img/43.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米8 青春版 4+64GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            内置每月10G高速流量，高颜值流光渐变色
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">
+                            1099元
+                        </p>
+                    </div>
+                </li>
+                <!--1行2列手机-->
+
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+
+                    </div>
+
+                    <img src="../img/35.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米MIX 2S 8GB+256GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            晓龙845年度旗舰处理器，艺术品般陶瓷机身
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">3399元
+                            <s>
+                                3999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行3列手机-->
+                <!--1行3列手机-->
+                <li class="photo-m18.bai">
+                    <div class="photo-bj-xiao2">
+
+                    </div>
+
+                    <img src="../img/35.jpg" alt="" class="photo-mi8">
+
+                    <div>
+                        <h3>
+                            小米MIX 2S 8GB+256GB
+                        </h3>
+                    </div>
+                    <div>
+                        <ul class="photo-js">
+                            晓龙845年度旗舰处理器，艺术品般陶瓷机身
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="price-shouji">3399元
+                            <s>
+                                3999元
+                            </s>
+                        </p>
+                    </div>
+                </li>
+                <!--1行3列手机-->
+
+
+
+
+
+            </ul><!--8类手机-->
+            <div class="phone-bd">
+            </div><!--手机部分的底部大绿色块-->
+        </div>
+    </div>
+</div>
+<!--家电部分结束-->
+
+<div class="dianshi">
+    <img src="../img/jiadianx.jpg" alt="" class="dianshi-img">
+</div>
+<!--热门产品开始-->
+<div class="photo-box2 container">
+    <div class="photo-title">
+        热评产品
+    </div>
+    <div class="rpcp">
+        <ul>
+            <li class="reping">
+                <div class="rptp">
+                    <img src="../img/rp1.jpg" alt="">
+                </div>
+                <div class="rp2"><i>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。给客服妹子一个大...</i></div>
+                <div class="rp3"><i>来自酸小妞~！的评价</i></div>
+                <div class="rp4">
+                    <h3>米家车载空气净化器（Uuuuuuuuuu）</h3>
+                    <span>|</span>
+                    <p>49元</p>
+                </div>
+            </li>
+            <li class="reping1">
+                <div class="rptp">
+                <img src="../img/01.jpg" alt="">
+            </div>
+                <div class="rp2"><i>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。给客服妹子一个大...</i></div>
+                <div class="rp3"><i>来自酸小妞~！的评价</i></div>
+                <div class="rp4">
+                <h3>米家车载空气净化器（Uuuuuuuuuu）</h3>
+                <span>|</span>
+                <p>49元</p>
+            </div>
+            </li>
+            <li class="reping1">
+                <div class="rptp">
+                    <img src="../img/02.jpg" alt="">
+                </div>
+                <div class="rp2"><i>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。给客服妹子一个大...</i></div>
+                <div class="rp3"><i>来自酸小妞~！的评价</i></div>
+                <div class="rp4">
+                    <h3>米家车载空气净化器（Uuuuuuuuuu）</h3>
+                    <span>|</span>
+                    <p>49元</p>
+                </div>
+            </li>
+            <li class="reping1">
+                <div class="rptp">
+                    <img src="../img/03.jpg" alt="">
+                </div>
+                <div class="rp2"><i>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。给客服妹子一个大...</i></div>
+                <div class="rp3"><i>来自酸小妞~！的评价</i></div>
+                <div class="rp4">
+                    <h3>米家车载空气净化器（Uuuuuuuuuu）</h3>
+                    <span>|</span>
+                    <p>49元</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!--热门产品结束-->
+<div class="dianshi">
+    <img src="../img/55.jpg" alt="" class="dianshi-img">
+</div>
+<!--内容开始-->
+<div class="photo-box3 container">
+    <div class="photo-title">
+        内容
+    </div>
+    <div class="nr1">
+        <ul>
+            <li class="nr11">
+                <div class="nr21"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--内容结束-->
+<!--视屏开始-->
+<div class="photo-box4 container">
+    <div class="photo-title-shiping">
+        内容
+    </div>
+    <div class="nr2">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<!--视屏结束-->
+<!--小米底部开始-->
+<div class="footer">
+
+</div>
+<!--小米底部结束-->
+</body>
+</html>
